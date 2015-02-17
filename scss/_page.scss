@@ -1,0 +1,79 @@
+
+.jumbo-header {
+  &.home {
+    @media screen and (min-width: $screen-md-min) {
+      padding:  {
+        top: 120px;
+        bottom: 120px;
+      }
+    }
+  }
+  background: {
+    position: 50% center;
+    attachment: scroll;
+    repeat: no-repeat;
+    size: cover;
+  }
+  &.austin {
+    background-image: url('../images/website-austin-background.png');
+  }
+  &.london {
+    background-image: url('../images/website-london-background.png');
+  }
+}
+
+.jumbo-content {
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  @media screen and (min-width: $screen-md-min) {
+    width: 768px;
+  }
+  .home & {
+    width: 480px;
+    @media screen and (min-width: $screen-md-min) {
+      width: 600px;
+    }
+  }
+  // @media screen and (min-width: $screen-lg-min) {
+  //   width: 768px;
+  // }
+  :last-child {
+    margin-bottom: 0;
+  }
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+
+.big-logo {
+  @include text-hide();
+  color: transparent !important;
+  small {
+    @include text-hide();
+  }
+  line-height: 0;
+  display: block;
+  padding: {
+    top: percentage(601/2614);
+    bottom: 0;
+  }
+  margin: 0;
+  margin-bottom: 15px;
+  background: {
+    size: contain;
+    attachment: scroll;
+    position: center center;
+    repeat: no-repeat;
+  }
+  &.horizons {
+    background: {
+      image: url('../images/2015-Horizons-Logo-Final-04-cropped.png');
+    }
+  }
+}
+
+.callout-text {
+  color: $yellow-dark;
+}

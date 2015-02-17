@@ -1,0 +1,25 @@
+{
+    "name": "planview/horizons-2015",
+    "license": "GPL-2+",
+    "authors": [
+        {
+            "name": "Steve Crockett",
+            "email": "crockett95@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "~1.1",
+        "wpackagist-plugin/advanced-custom-fields": "~4.4"
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
