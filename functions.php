@@ -129,6 +129,10 @@ function horizons_2015_scripts() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+    if ( WP_DEBUG ) {
+        wp_enqueue_script( 'livereload', '//localhost:35729/livereload.js?snipver=1' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'horizons_2015_scripts' );
 
@@ -146,3 +150,33 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Register the custom fields that the theme needs
+ */
+require get_template_directory() . '/inc/custom-fields.php';
+
+/**
+ * Change the editor so it's nice and pretty
+ */
+require get_template_directory() . '/inc/editor.php';
+
+/**
+ * Work some shortcode magic in the nav so we can use icons
+ */
+require get_template_directory() . '/inc/navs.php';
+
+/**
+ * The Bootstrap nav walker. I still use it everywhere
+ */
+require get_template_directory() . '/inc/nav-walker.php';
+
+/**
+ * Custom shortcodes. Mostly for icons
+ */
+require get_template_directory() . '/inc/shortcodes.php';
+
+/**
+ * A bit of logic around the different countries
+ */
+require get_template_directory() . '/inc/countries.php';

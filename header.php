@@ -35,13 +35,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <nav class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown navbar-switcher">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Austin <span class="fa fa-chevron-down"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Lorem ipsum dolor.</a></li>
-                            <li><a href="#">Facere, dolorem, voluptatum.</a></li>
-                        </ul>
-                    </li>
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="fa fa-caret-down"></span></a>

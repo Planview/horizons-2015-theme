@@ -1,0 +1,12 @@
+@import "colors";
+@import "variables";
+
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "fontawesome/scss/font-awesome";
+
+@import "base";
+@import "page";
+
+html {
+  margin: 10px;
+}

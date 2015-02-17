@@ -49,6 +49,7 @@
 
 .big-logo {
   @include text-hide();
+  font-size: 0 !important;
   color: transparent !important;
   small {
     @include text-hide();
