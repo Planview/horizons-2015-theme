@@ -80,3 +80,32 @@ function horizons_2015_ie_polyfills() { ?>
 <![endif]-->
 <?php }
 add_action( 'wp_head', 'horizons_2015_ie_polyfills', 60 );
+
+/**
+ * Replace the last occurrance of a string
+ *
+ * from http://stackoverflow.com/questions/3835636/php-replace-last-occurence-of-a-string-in-a-string
+ */
+function str_lreplace($search, $replace, $subject)
+{
+    $pos = strrpos($subject, $search);
+
+    if($pos !== false)
+    {
+        $subject = substr_replace($subject, $replace, $pos, strlen($search));
+    }
+
+    return $subject;
+}
+
+/**
+ * Add some classes to the edit post link
+ */
+function horizons_2015_edit_post_link( $link ) {
+    return preg_replace(
+        '/(<a [^>]*class=([\'"]))([^\'"]*)([^>]*)/',
+        '$1$3 label label-danger$4',
+        $link
+    );
+}
+add_filter( 'edit_post_link', 'horizons_2015_edit_post_link' );

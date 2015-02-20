@@ -31,3 +31,11 @@ function horizons_2015_bootstrap_visibility( $atts, $content ) {
     return sprintf('<span class="%s">%s</span>', implode(' ', $classes), $content);
 }
 add_shortcode( 'bs-vis','horizons_2015_bootstrap_visibility' );
+
+/**
+ * Screenreader shortcode
+ */
+function horizons_2015_sr_shortcode( $atts, $content ) {
+    return sprintf('<span class="sr-only">%s</span>', $content);
+}
+add_shortcode( 'sr-only','horizons_2015_sr_shortcode' );

@@ -23,30 +23,31 @@
         <div class="container"><!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only"><?php _e('Toggle navigation', 'horizons_2015') ?></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand horizons" href="#"><span class="navbar-logo horizons">Horizons</span></a>
+                <a class="navbar-brand horizons" href="<?php echo home_url( '/' ); ?>"><span class="navbar-logo horizons"><?php bloginfo( 'name' ); ?></span></a>
             </div>
-            <a href="#" class="navbar-brand planview pull-right hidden-xs hidden-sm"><span class="planview navbar-logo">Planview</span></a>
+            <a href="http://planview.com" class="navbar-brand planview pull-right hidden-xs hidden-sm"><span class="planview navbar-logo"><?php _e('Planview', 'planview'); ?></span></a>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <nav class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="fa fa-caret-down"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav><!-- /.navbar-collapse -->
+            <?php wp_nav_menu( array(
+                'theme_location' => horizons_2015_page_information( 'horizons_2015_page_location' ) ?: 'primary',
+                'container' => 'nav',
+                'container_class' => 'collapse navbar-collapse',
+                'menu_class' => 'nav navbar-nav',
+                'echo' => true,
+                'fallback_cb' => false,
+                'before' => '',
+                'after' => '',
+                'link_before' => '',
+                'link_after' => '',
+                'items_wrap' => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+                'depth' => 2,
+                'walker' => new The_Bootstrap_Nav_Walker
+            ) ); ?>
         </div>
     </header>
 

@@ -1,11 +1,5 @@
 body {
   padding-top: $navbar-height;
-  &.admin-bar {
-    padding-top: 46px + $navbar-height;
-    @media screen and (min-width: 783px) {
-      padding-top: 32px + $navbar-height;
-    }
-  }
 }
 
 .admin-bar .navbar-fixed-top {
@@ -92,25 +86,25 @@ body {
   &:hover {
     color: #fff;
   }
-  &.facebook {
+  .facebook & {
     background-color: #3b5998;
     &:hover {
       background-color: darken(#3b5998, 10%);
     }
   }
-  &.twitter {
+  .twitter & {
     background-color: #55acee;
     &:hover {
       background-color: darken(#55acee, 10%);
     }
   }
-  &.linkedin {
+  .linkedin & {
     background-color: #007bb6;
     &:hover {
       background-color: darken(#007bb6, 10%);
     }
   }
-  &.youtube {
+  .youtube & {
     background-color: #b00;
     &:hover {
       background-color: darken(#b00, 10%);

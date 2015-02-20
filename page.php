@@ -12,24 +12,21 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+            <header class="<?php horizons_2015_page_header_classes( ['jumbotron', 'jumbo-header'] ); ?>" data-stellar-background-ratio="0.5">
+                <div class="container text-center jumbo-content">
+                    <?php the_field( 'horizons_2015_jumbotron_content' ); ?>
+                </div>
+            </header>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+            <?php get_template_part( 'content', 'page' ); ?>
 
-			<?php endwhile; // end of the loop. ?>
+        <?php endwhile; // end of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    </main><!-- #main -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

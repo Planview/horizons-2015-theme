@@ -75,6 +75,10 @@ function horizons_2015_setup() {
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'horizons-2015' ),
+        'austin' => __( 'Primary Menu (Global)', 'horizons-2015' ),
+        'london' => __( 'Primary Menu (Europe)', 'horizons-2015' ),
+        'social' => __( 'Footer Menu (Social)', 'horizons-2015' ),
+        'switcher' => __( 'Footer Menu (Switcher)', 'horizons-2015' ),
     ) );
 
     /*
@@ -87,24 +91,6 @@ function horizons_2015_setup() {
 }
 endif; // horizons_2015_setup
 add_action( 'after_setup_theme', 'horizons_2015_setup' );
-
-/**
- * Register widget area.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
- */
-function horizons_2015_widgets_init() {
-    register_sidebar( array(
-        'name'          => __( 'Sidebar', 'horizons-2015' ),
-        'id'            => 'sidebar-1',
-        'description'   => '',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</aside>',
-        'before_title'  => '<h1 class="widget-title">',
-        'after_title'   => '</h1>',
-    ) );
-}
-add_action( 'widgets_init', 'horizons_2015_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -123,8 +109,13 @@ function horizons_2015_scripts() {
     wp_register_script( 'bootstrap', get_stylesheet_directory_uri() .
         '/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
         array('jquery'), '3.3.2', true );
+    wp_register_script( 'stellar', get_stylesheet_directory_uri() .
+        '/bower_components/stellar/jquery.stellar.min.js', array('jquery'), '0.6.2', true );
+    wp_register_script( 'horizons-2015', get_stylesheet_directory_uri() .
+        '/js/main.js', array('jquery', 'stellar'), horizons_2015_info( 'Version' ), true );
     wp_enqueue_script( 'bootstrap' );
     wp_enqueue_script( 'modernizr' );
+    wp_enqueue_script( 'horizons-2015' );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
@@ -180,3 +171,8 @@ require get_template_directory() . '/inc/shortcodes.php';
  * A bit of logic around the different countries
  */
 require get_template_directory() . '/inc/countries.php';
+
+/**
+ * Page template goodies
+ */
+require get_template_directory() . '/inc/page.php';
