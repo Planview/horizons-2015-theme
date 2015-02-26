@@ -16,7 +16,7 @@ get_header(); ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <header class="<?php horizons_2015_page_header_classes( ['jumbotron', 'jumbo-header'] ); ?>" data-stellar-background-ratio="0.5">
+            <header class="<?php horizons_2015_page_header_classes( array('jumbotron', 'jumbo-header') ); ?>" data-stellar-background-ratio="0.5">
                 <div class="container text-center jumbo-content">
                     <?php the_field( 'horizons_2015_jumbotron_content' ); ?>
                 </div>
