@@ -110,6 +110,12 @@ body {
       background-color: darken(#b00, 10%);
     }
   }
+  .xing & {
+    background-color: #026466;
+    &:hover {
+      background-color: darken(#026466, 10%);
+    }
+  }
 }
 
 .switcher {
