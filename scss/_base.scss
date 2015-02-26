@@ -2,3 +2,7 @@ html, body, :root {
   height: 100%;
   font-weight: 300;
 }
+
+@include text-emphasis-variant('.text-orange', $horizons-orange);
+@include text-emphasis-variant('.text-purple', $horizons-purple);
+@include text-emphasis-variant('.text-purple-light', $horizons-purple-light);

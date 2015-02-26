@@ -13,9 +13,9 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   &.planview {
-    background-color: $brand-primary;
+    background-color: $corp-blue;
     &:hover {
-      background-color: darken($brand-primary, 5%);
+      background-color: darken($corp-blue, 5%);
     }
   }
 }
@@ -120,11 +120,11 @@ body {
     }
   }
   .active a {
-    color: $corp-orange;
+    color: #999;
     cursor: default;
     pointer-events: none;
     &:hover, &:active {
-      color: $corp-orange;
+      color: #999;
     }
   }
 }

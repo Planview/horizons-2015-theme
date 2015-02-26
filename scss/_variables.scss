@@ -21,11 +21,11 @@ $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 46.7%) !default; // #777
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
-$brand-primary:         $corp-blue;
-$brand-success:         $green;
-$brand-info:            $purple;
-$brand-warning:         $orange;
-$brand-danger:          $red;
+$brand-primary:         $horizons-blue;
+$brand-success:         $horizons-green;
+$brand-info:            $horizons-blue-light;
+$brand-warning:         $horizons-yellow;
+$brand-danger:          $horizons-red;
 
 
 //== Scaffolding
@@ -40,7 +40,7 @@ $text-color:            $gray-dark !default;
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $corp-blue-dark;
+$link-hover-color:      darken($link-color, 5%);
 
 
 //== Typography
@@ -115,7 +115,7 @@ $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    $corp-orange;
+$component-active-color:    $horizons-yellow;
 //** Global background color for active items (e.g., navs or dropdowns).
 $component-active-bg:       $gray;
 
@@ -387,8 +387,8 @@ $navbar-inverse-border:                     transparent;
 $navbar-inverse-link-color:                 #fff;
 $navbar-inverse-link-hover-color:           $gray-lighter;
 $navbar-inverse-link-hover-bg:              transparent !default;
-$navbar-inverse-link-active-color:          #f98810;
-$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 5%);
+$navbar-inverse-link-active-color:          #fff;
+$navbar-inverse-link-active-bg:             #222;
 $navbar-inverse-link-disabled-color:        $gray-light;
 $navbar-inverse-link-disabled-bg:           transparent !default;
 
@@ -486,20 +486,20 @@ $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
+$state-success-text:             $horizons-green;
+$state-success-bg:               lighten($horizons-green, 60%);
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
+$state-info-text:                $horizons-blue-light;
+$state-info-bg:                  lighten($horizons-blue-light, 60%);
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
+$state-warning-text:             $horizons-yellow;
+$state-warning-bg:               lighten($horizons-yellow, 60%);
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
+$state-danger-text:              $horizons-red;
+$state-danger-bg:                lighten($horizons-red, 60%);
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
 

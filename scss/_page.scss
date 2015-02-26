@@ -15,10 +15,16 @@
     size: cover;
   }
   &.austin {
-    background-image: url('../img/website-austin-background.png');
+    background-image: url('../img/website-austin-background-interior.png');
+    &.home {
+      background-image: url('../img/website-austin-background.png');
+    }
   }
   &.london {
-    background-image: url('../img/website-london-background.png');
+    background-image: url('../img/website-london-background-interior.png');
+    &.home {
+      background-image: url('../img/website-london-background.png');
+    }
   }
 }
 
@@ -26,14 +32,9 @@
   padding: 20px;
   background-color: rgba(0,0,0,0.6);
   color: #fff;
+  width: 480px;
   @media screen and (min-width: $screen-md-min) {
-    width: 768px;
-  }
-  .home & {
-    width: 480px;
-    @media screen and (min-width: $screen-md-min) {
-      width: 600px;
-    }
+    width: 600px;
   }
   // @media screen and (min-width: $screen-lg-min) {
   //   width: 768px;
@@ -76,5 +77,5 @@
 }
 
 .callout-text {
-  color: $yellow-dark;
+  color: $horizons-yellow;
 }
