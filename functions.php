@@ -176,3 +176,8 @@ require get_template_directory() . '/inc/countries.php';
  * Page template goodies
  */
 require get_template_directory() . '/inc/page.php';
+
+/**
+ * Theme options
+ */
+require get_template_directory() . '/inc/logo-opts.php';

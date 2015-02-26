@@ -1,13 +1,12 @@
 <?php
 
 function horizons_2015_page_country() {
-    if ( in_the_loop() ) {
-        return get_field('horizons_page_country');
-    } else {
-        the_post();
-        $country = get_field('horizons_page_country');
-        rewind_posts();
+    return horizons_2015_page_information( 'horizons_2015_page_location', get_queried_object_id() ) ?: null;
+}
 
-        return $country;
+function horizons_2015_home_url() {
+    if ( ! is_page() ) {
+        return home_url( '/' );
     }
+    return get_option( 'horizons_2015_home_' . horizons_2015_page_country() ) ?: home_url( '/' );
 }
