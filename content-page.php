@@ -9,7 +9,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php if ( ! get_field('horizons_2015_homepage_design') ) : ?>
     <header class="entry-header container">
-        <?php the_title( '<h1 class="entry-title text-default">', '</h1>' ); ?>
+        <?php the_title( '<h1 class="entry-title text-primary">', '</h1>' ); ?>
     </header><!-- .entry-header -->
     <?php endif; ?>
 

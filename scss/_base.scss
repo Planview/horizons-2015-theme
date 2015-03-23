@@ -6,3 +6,31 @@ html, body, :root {
 @include text-emphasis-variant('.text-orange', $horizons-orange);
 @include text-emphasis-variant('.text-purple', $horizons-purple);
 @include text-emphasis-variant('.text-purple-light', $horizons-purple-light);
+
+.bg-success {
+   background-color:$horizons-green;
+}
+
+.bg-purple {
+   background-color:$horizons-purple;
+}
+
+.bg-orange {
+   background-color:$horizons-orange;
+}
+
+.bg-danger {
+   background-color:$horizons-red;
+}
+
+.bg-warning {
+   background-color:$horizons-yellow;
+}
+
+.bg-primary {
+   background-color:$horizons-blue;
+}
+
+.btn-purple {
+	@include button-variant(#fff, $horizons-purple, darken($horizons-purple, 5%));
+}

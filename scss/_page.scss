@@ -80,10 +80,25 @@
   color: $horizons-yellow;
 }
 
-h1 {
+.entry-title {
   margin-bottom: 24px;
 }
 
-.text-default {
-  color:$horizons-blue;
+.why-attend-list {
+  list-style-type:none;
+  padding-left:0;
+}
+
+.why-attend-list li {
+  padding:15px;
+  color:#fff;
+  margin-bottom:10px;
+}
+
+.why-attend-list span {
+  float:left;
+  font-size:40px;
+  font-weight:800;
+  margin-right:10px;
+  margin-top:-5px;
 }

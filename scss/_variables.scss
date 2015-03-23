@@ -58,7 +58,7 @@ $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.75)); // ~12px
 
 $font-size-h1:            floor(($font-size-base * 2.25)); // ~36px
-$font-size-h2:            floor(($font-size-base * 2)); // ~32px
+$font-size-h2:            floor(($font-size-base * 1.75)); // ~32px
 $font-size-h3:            ceil(($font-size-base * 1.5)); // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
 $font-size-h5:            $font-size-base;
@@ -157,7 +157,7 @@ $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
 $btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $horizons-purple !default;
+$btn-primary-bg:                 $horizons-blue !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
 $btn-success-color:              #fff !default;
@@ -430,8 +430,8 @@ $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
-$nav-pills-active-link-hover-bg:            $component-active-bg !default;
-$nav-pills-active-link-hover-color:         $component-active-color !default;
+$nav-pills-active-link-hover-bg:            $horizons-green !default;
+$nav-pills-active-link-hover-color:         #fff !default;
 
 
 //== Pagination
@@ -475,7 +475,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 //
 //##
 
-$jumbotron-padding:              30px !default;
+$jumbotron-padding:              40px !default;
 $jumbotron-color:                inherit !default;
 $jumbotron-bg:                   $gray-lighter !default;
 $jumbotron-heading-color:        inherit !default;
