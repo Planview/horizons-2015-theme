@@ -34,3 +34,15 @@ html, body, :root {
 .btn-purple {
 	@include button-variant(#fff, $horizons-purple, darken($horizons-purple, 5%));
 }
+
+.bg-pve-blue-lighter {
+	background-color:$pve-blue-light;
+}
+
+.bg-pp-green-lighter {
+	background-color:$pp-green-light;
+}
+
+.bg-corp-blue-lighter {
+	background-color:$corp-blue-lighter;
+}
