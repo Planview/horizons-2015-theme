@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'scss',
-          src: ['*.{scss,sass}'],
+          src: ['*.scss'],
           dest: 'css',
           ext: '.css'
         }]
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['scss/{,*/}*.{scss,sass}'],
-        tasks: ['sass:styles', 'autoprefixer']
+        tasks: ['sass:styles'/*, 'autoprefixer'*/]
       },
       livereload: {
         options: {

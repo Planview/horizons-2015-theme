@@ -26,7 +26,7 @@
 // }
 .ginput_complex {
   @include make-row();
-  .ginput_left, .ginput_right {
+  .ginput_left, .ginput_right, .name_first, .name_last {
     @include make-xs-column(12);
     @include make-md-column(6);
   }
@@ -61,7 +61,7 @@
 }
 .gform_button {
     @include make-btn();
-    @extend .btn-info;
+    @extend .btn-success;
 }
 .gform_footer {
     text-align: center;
