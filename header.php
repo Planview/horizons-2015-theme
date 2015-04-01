@@ -22,7 +22,7 @@
     <header class="site-header navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container"><!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-content">
                     <span class="sr-only"><?php _e('Toggle navigation', 'horizons_2015') ?></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -36,6 +36,7 @@
             <?php wp_nav_menu( array(
                 'theme_location' => horizons_2015_page_information( 'horizons_2015_page_location' ) ?: 'primary',
                 'container' => 'nav',
+                'container_id' => 'navbar-content',
                 'container_class' => 'collapse navbar-collapse',
                 'menu_class' => 'nav navbar-nav',
                 'echo' => true,
