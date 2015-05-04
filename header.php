@@ -19,9 +19,9 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="site-header navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <header class="site-header navbar navbar-inverse navbar-fixed-top">
         <div class="container"><!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header" role="navigation">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-content">
                     <span class="sr-only"><?php _e('Toggle navigation', 'horizons_2015') ?></span>
                     <span class="icon-bar"></span>
