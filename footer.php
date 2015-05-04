@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-sm-6">
                         <?php echo str_lreplace(
-                            '<li class="divider">|</li>',
+                            '</li><li class="divider">|',
                             '',
                             wp_nav_menu( array(
                                 'echo' => false,
@@ -36,7 +36,7 @@
                                 'container_class' => 'switcher',
                                 'menu_class' => 'list-inline text-right',
                                 'fallback_cb' => false,
-                                'after' => '<li class="divider">|</li>',
+                                'after' => '</li><li class="divider">|',
                                 'depth' => 1,
                             ) )
                         ); ?>
