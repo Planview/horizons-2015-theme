@@ -12,12 +12,6 @@ body {
 .navbar-brand {
   padding-top: 10px;
   padding-bottom: 10px;
-  &.planview {
-    background-color: $corp-blue;
-    &:hover {
-      background-color: darken($corp-blue, 5%);
-    }
-  }
 }
 
 .navbar-logo {
