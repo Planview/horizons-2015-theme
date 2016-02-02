@@ -71,12 +71,18 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 endif;
 
 /**
+ * Fixes for IE
  * Polyfills for IE8
  */
 function horizons_2015_ie_polyfills() { ?>
+<style>_:-ms-lang(x), header.jumbotron[style]{margin-top:-25px;}</style>
+<!--[if IE]>
+    <style>header.jumbotron[style]{margin-top:-25px;}</style>
+<![endif]-->
 <!--[if lte IE 8]>
     <style>.bg-size{-ms-behavior:url('<?php echo get_template_directory_uri() . '/bower_components/background-size-polyfill/backgroundsize.min.htc' ?>')}</style>
     <script src="<?php echo get_template_directory_uri() . '/bower_components/respond/dest/respond.min.js' ?>"></script>
+    <link rel='stylesheet'  href='<?php echo get_template_directory_uri() . '/css/ie8.css' ?>' type='text/css' media='all' />
 <![endif]-->
 <?php }
 add_action( 'wp_head', 'horizons_2015_ie_polyfills', 60 );
