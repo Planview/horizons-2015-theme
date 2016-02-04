@@ -1,0 +1,46 @@
+header.jumbotron { 
+margin-top:-25px !important;
+background-position: 50% center !important;
+padding:0 !important;
+}
+.horizons.navbar-logo {
+background-image:url('none');
+}
+.navbar-logo {
+font-size:30px !important;
+line-height:30px !important;
+color:#FFF !important;
+text-transform:uppercase;
+}
+div.jumbo-content {
+background-color: #000000;
+border: 1px solid black;
+max-width:600px !important;
+filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+div.jumbo-content h1 {
+color:#FFF !important;
+}
+.big-logo { 
+font-size:30px !important;
+line-height:30px !important;
+color:#FFF !important;
+text-transform:uppercase;
+padding-top:35px !important;
+}
+.page-child div.jumbo-content {
+padding-top:65px !important;
+}
+.big-logo small {
+font-size:20px !important; 
+line-height:20px !important;
+text-transform:none;
+color:#FFF !important;
+diaplay:block !important;
+}
+.horizons.big-logo {
+background-image:url('none');
+}
+.site-footer .switcher { text-align:right !important; }
+#menu-social-icons { display:none !important; }
+ul.list-inline li { display:inline !important; }

@@ -82,7 +82,7 @@ function horizons_2015_ie_polyfills() { ?>
 <!--[if lte IE 8]>
     <style>.bg-size{-ms-behavior:url('<?php echo get_template_directory_uri() . '/bower_components/background-size-polyfill/backgroundsize.min.htc' ?>')}</style>
     <script src="<?php echo get_template_directory_uri() . '/bower_components/respond/dest/respond.min.js' ?>"></script>
-    <link rel='stylesheet'  href='<?php echo get_template_directory_uri() . '/css/ie8.css' ?>' type='text/css' media='all' />
+    <link rel='stylesheet'  href='<?php echo get_template_directory_uri() . '/css2/ie8.css' ?>' type='text/css' media='all' />
 <![endif]-->
 <?php }
 add_action( 'wp_head', 'horizons_2015_ie_polyfills', 60 );
