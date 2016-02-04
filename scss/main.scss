@@ -1,9 +1,9 @@
 @import "colors";
 @import "variables";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "fontawesome/scss/font-awesome";
+@import "../bower_components/fontawesome/scss/font-awesome";
 
 @import "base";
 @import "mixins";

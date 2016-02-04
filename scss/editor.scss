@@ -1,8 +1,8 @@
 @import "colors";
 @import "variables";
 
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "fontawesome/scss/font-awesome";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/fontawesome/scss/font-awesome";
 
 @import "base";
 @import "page";
