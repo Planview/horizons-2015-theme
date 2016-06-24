@@ -28,9 +28,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a href="//www.planview.com/" class="navbar-brand planview pull-left hidden-xs"><span class="planview navbar-logo"><?php _e('Planview', 'planview'); ?></span></a>
                 <a class="navbar-brand horizons" href="<?php echo esc_attr( horizons_2015_home_url() ); ?>"><span class="navbar-logo horizons"><?php bloginfo( 'name' ); ?></span></a>
             </div>
-            <a href="http://planview.com" class="navbar-brand planview pull-right hidden-xs hidden-sm"><span class="planview navbar-logo"><?php _e('Planview', 'planview'); ?></span></a>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <?php wp_nav_menu( array(

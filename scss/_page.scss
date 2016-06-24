@@ -34,11 +34,9 @@
   color: #fff;
   width: 480px;
   @media screen and (min-width: $screen-md-min) {
-    width: 600px;
+    width: 560px;
+    padding: 20px 0;
   }
-  // @media screen and (min-width: $screen-lg-min) {
-  //   width: 768px;
-  // }
   :last-child {
     margin-bottom: 0;
   }
