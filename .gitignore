@@ -5,3 +5,4 @@
 .env
 /css
 composer.lock
+/scss/.sass-cache
