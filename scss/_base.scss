@@ -31,6 +31,10 @@ html, body, :root {
    background-color:$horizons-blue;
 }
 
+.btn-blue {
+	@include button-variant(#fff, $horizons-blue, darken($horizons-blue, 5%));
+}
+
 .btn-purple {
 	@include button-variant(#fff, $horizons-purple, darken($horizons-purple, 5%));
 }
